@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="lir">
+	<head>
+		<meta charset ="utf-8">
+		<title> Project Circuits </title>
+        <link rel="stylesheet" href = "styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href =  "https://www.pngrepo.com/svg/121336/resistor" >
+	</head>
+	<body>
+       <!--Title-->
+        <div class="one"> 
+            <h1> Nodal Analysis and Supernode Calculator</h1>
+            <img src="images/head-image.png">
+         <!--Button-->
+         <button><a href="options.html"> Set Up Your Circuit Now!</a></button>
+        
+        </div> 
+        
+        
+        <!--Definition-->
+        <div class="two">
+        <h2> Theory</h2>
+        <p>In electric circuits analysis, nodal analysis, node-voltage analysis, or the branch current  method
+            <br> is a method of determining the voltage (potential difference) between "nodes" (points where elements
+            <br>  or branches connect) in an electrical circuit in terms of the branch currents. 
+        </p>
+        
+        <!--How?-->
+        <p>
+                In analyzing a circuit using Kirchhoff's circuit laws, one can either do nodal analysis using Kirchhoff's  
+            <br> current law (KCL) or mesh analysis using Kirchhoff's voltage law (KVL). Nodal analysis writes an equation 
+            <br> at each electrical node, requiring that the branch currents incident at a node must sum to zero. The branch  
+            <br> currents are written in terms of the circuit node voltages. As a consequence, each branch constitutive relation             
+            <br> must give current as a function of voltage; an admittance representation. For instance, for a resistor,  
+            <br>  Ibranch = Vbranch * G, where G (=1/R) is the admittance (conductance) of theresistor.
+        </p>
+        </div>
+        <!--Procedures-->
+        <div class="three ">
+        <h2> Procedures </h2>
+        <p>Step 1. Note all connected wire segments in the circuit. These are the nodes of nodal analysis.</p>
+        <p>Step 2. Select one node as the ground reference. The choice does not affect the result and is just a 
+            <br> matter of convention. Choosing the node with the most connections can simplify the analysis. 
+            <br> For a circuit of N nodes the number of nodal equations is N−1</p>
+        <p>Step 3. Assign a variable for each node whose voltage is unknown. If the voltage is already known, 
+            <br> it is not necessary to assign a variable.</p>
+        <p>Step 4. For each unknown voltage, form an equation based on Kirchhoff's Current Law (i.e. add together 
+            <br> all currents leaving from the node and mark the sum equal to zero). The current between two nodes 
+            <br> is equal to the node with the higher potential minus the node with the lower potential, both divided 
+            <br> by the resistance between the two nodes.</p>
+        <p>Step 5. If there are voltage sources between two unknown voltages, join the two nodes as a supernode. The 
+            <br> currents of the two nodes are combined in a single equation, and a new equation for the voltages is formed.</p>
+        <p>Step 6. Solve the system of simultaneous equations for each unknown voltage.</p>
+        </div>
+        <div class="four">
+        <h2> Supernodes</h2>
+            <p>In this circuit, we initially have two unknown voltages, V1 and V2. The voltage at V3 is already known to be VB 
+                <br> because the other terminal of the voltage source is at ground potential. </p> 
+
+            <p>   The current going through voltage source VA cannot be directly calculated. Therefore, we cannot write the current 
+                <br> equations for either V1 or V2. However, we know that the same current leaving node V2 must enter node V1. Even though 
+                <br> the nodes cannot be individually solved, we know that the combined current of these two nodes is zero. This combining  
+                <br> of the two nodes is called the supernode technique, and it requires one additional equation: V1 = V2 + VA.</p>
+        </div>
+      
+        <!--Footer-->
+        <div class="last">
+        <p class="p-last"> A School Project Under Development
+            <br> (c) 2020 by  Carlos Gubat IV 
+        </p>
+        </div>
+    
+    </body>
+	
+</html>
