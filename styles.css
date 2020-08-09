@@ -30,6 +30,7 @@ button{
         margin-left: auto;
         margin-right: auto;
         border-radius: 8px;
+			
 }
 
 a{text-decoration: none;
@@ -68,7 +69,7 @@ p, .p-last{ line-height: 2.0 ;
 }
 
 
-.pow1,.res1,.res2,.res3, .res4{
+#pow1,#res1,#res2,#res3, #res4, #res5{
     padding: 10px 20px;
     border: 3px solid #73AD21;
     display: inline-block ;
@@ -78,13 +79,13 @@ p, .p-last{ line-height: 2.0 ;
 }
 
 
-.circuit{
+img{
     margin-top: 30px ;
-    width: 50% ;
-    height: 300px;
+    width: 30% ;
+    
 }
 
-.simulate{
+#btn{
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
@@ -98,4 +99,9 @@ p, .p-last{ line-height: 2.0 ;
     margin-left: auto;
     margin-right: auto;
     border-radius: 8px;
+    outline: none;
+	cursor: pointer;
+			
 }
+#result{color:white;}
+
