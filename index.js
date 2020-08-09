@@ -41,7 +41,10 @@ function superNode(){
     var zR = resistor ;
     var ecos = cos(vnangle);
     var gsin = sin(vnangle);
-     
+    var e = vn * ecos ;
+    var g = vn * gsin ;
+    var 
+
 
 
 
@@ -54,13 +57,7 @@ function superNode(){
 
 
 
-ZC = XC * -1j;
-ZL = (XL) * 1j;
-Zr = R;
-ecos = cos(Vnangle);
-gsin = sin(Vnangle);
-e = Vn * ecos;
-g = Vn * gsin;
+
 V_1 = e + 1j * g;
 a = ZC^-1;
 b = ZL^-1 + R^-1;
@@ -77,6 +74,6 @@ V2 = A(2,:);
 fprintf('the voltage in node 1 is: %s%+sj \n',real(V1),imag(V1)); 
 fprintf('the voltage in node 2 is: %d%+dj \n',real(V2),imag(V2)); 
 
+
+
 */
-
-
