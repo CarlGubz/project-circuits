@@ -21,7 +21,7 @@ function singleNode() {
     document.getElementById("result").innerHTML = "The node voltage is " +(nodeVoltage)+ " volts"  ;
    
 }
-
+/*
 function superNode(){
      //Getting values for each component
     var vn = parseInt(document.getElementById("vn").value);
@@ -77,6 +77,6 @@ V2 = A(2,:);
 fprintf('the voltage in node 1 is: %s%+sj \n',real(V1),imag(V1)); 
 fprintf('the voltage in node 2 is: %d%+dj \n',real(V2),imag(V2)); 
 
-
+*/
 
 
